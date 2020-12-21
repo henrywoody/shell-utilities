@@ -1,7 +1,7 @@
 alias py="python3"
 alias pm="python3 manage.py"
-alias venv="virtualenv --python=$(which python3) ./env"
-alias ae="source env/bin/activate"
+alias venv="python3 -m venv env.nosync" # .nosync for iCloud Drive
+alias ae="source env.nosync/bin/activate"
 alias de="deactivate"
 alias test="python3 -m unittest"
 alias bl="black -l 120"
