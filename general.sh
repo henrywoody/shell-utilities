@@ -4,7 +4,7 @@ then
 fi"
 
 
-alias ggrep="grep -r --exclude={package-lock.json,registerServiceWorker.js,.coverage} --exclude-dir={node_modules,env,build,_build,staticfiles,__pycache__,dist,.cache}"
+alias ggrep="grep -r --exclude={package-lock.json,registerServiceWorker.js,.coverage} --exclude-dir={node_modules,env,build,_build,staticfiles,__pycache__,dist,.cache,docs}"
 
 
 grepopen() {
