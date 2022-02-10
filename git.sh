@@ -8,11 +8,6 @@ gitfix() {
     git rebase -i $commit
 }
 
-alias cl="clear && ls && if git rev-parse --is-inside-work-tree 2> /dev/null
-then
-    git status
-fi"
-
 getgitignore() {
     language=$1
     curl https://raw.githubusercontent.com/github/gitignore/master/$language.gitignore

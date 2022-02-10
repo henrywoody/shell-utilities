@@ -1,10 +1,11 @@
-alias cl="clear && ls && if git rev-parse --is-inside-work-tree 2> /dev/null
+alias cl="clear && date && pwd && echo '---' && ls && if git rev-parse --is-inside-work-tree &> /dev/null
 then
-  git status
+    echo '---'
+    git status
 fi"
 
 
-alias ggrep="grep -r --exclude={package-lock.json,registerServiceWorker.js,.coverage} --exclude-dir={node_modules,env,build,_build,staticfiles,__pycache__,dist,.cache,docs}"
+alias ggrep="grep -r --exclude={package-lock.json,registerServiceWorker.js,.coverage} --exclude-dir={node_modules,env,env.nosync,build,_build,staticfiles,__pycache__,dist,.cache,docs}"
 
 
 grepopen() {
